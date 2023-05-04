@@ -1,0 +1,15 @@
+<h1>Tacos</h1>
+<p>Now getting the display from the tacos/index.html.erb file</p>
+
+<p>Now, let's eat delish tacos</p>
+
+<%tacos = ["Carnitas", "Steak", "Veggie"]%>
+
+<p>There are <%=tacos.count %> tacos in the array!</p> 
+<!--This weird bracketing is for commenting in an html file. Will be visible/published in Inspect Source -->
+
+<ul>
+  <% for taco in tacos %>
+  <li>taco</li> <!-- Need to sperate out ruby and html sections. Hence the for <-> end split in being two "different" statements -->
+  <% end %>
+</ul>

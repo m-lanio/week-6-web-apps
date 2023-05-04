@@ -1,0 +1,18 @@
+<h1>Dice</h1>
+<p>Let's code the dice game here</p>
+
+<%
+  die1 = rand(1..6)
+  die2 = rand(1..6)
+  dice_total = die1 + die2
+%>
+
+<p>Let's print out our dice values</p>
+ <p>Dice1 is: <%=die1 %> and die2 is: <%=die2 %></p>
+ <p>Total of both dice is: <%=dice_total %></p>
+
+ <p>Let's try and print out the dice images here</p>>
+ <img src="/images/dice/<%=die1 %>.svg"><img src="/images/dice/<%=die2 %>.svg">
+
+<p> <a href="/dice"> Roll again!</a></p>
+
